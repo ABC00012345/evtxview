@@ -61,6 +61,15 @@
     <addaction name="actionExit"/>
    </widget>
    <addaction name="menuFile"/>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionSearch"/>
+    <addaction name="separator"/>
+	<addaction name="actionSearchInEVTData"/>
+   </widget>
+   <addaction name="menuEdit"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionOpen">
@@ -76,6 +85,28 @@
     <string>Exit</string>
    </property>
   </action>
+
+  <action name="actionSearch">
+ <property name="text">
+  <string>Search</string>
+ </property>
+ <property name="shortcut">
+  <string>Ctrl+F</string>
+ </property>
+</action>
+
+<action name="actionSearchInEVTData">
+  <property name="text">
+    <string>Search in Event Data</string>
+  </property>
+  <property name="checkable">
+    <bool>true</bool>
+  </property>
+  <property name="checked">
+    <bool>false</bool>
+  </property>
+</action>
+ 
  </widget>
  <resources/>
  <connections/>
